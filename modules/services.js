@@ -154,13 +154,13 @@ const defs = [
   {
     member: "sticker-happy",
     regex: /(:D|😁)/,
-    fn: (bot, msg) => services.stickerHappy.execute(bot, msg, match ? match : []),
+    fn: (bot, msg) => services.stickerHappy.execute(bot, msg),
     eval: false
   },
   {
     member: "sticker-heart",
     regex: /❤️|<3|S2(?:[^\d]+|$)/i,
-    fn: (bot, msg) => services.stickerHeart.execute(bot, msg, match ? match : []),
+    fn: (bot, msg) => services.stickerHeart.execute(bot, msg),
     eval: false
   },
   {
